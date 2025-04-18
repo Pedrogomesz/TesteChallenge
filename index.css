@@ -1,0 +1,45 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lemon;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: -2px 9px 24px -11px rgba(0, 0, 0, 0.112);
+    /* position: fixed; */
+    width: 100%;
+    background-image: url(/images/pngtamnhocerto/logohc.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+}
+
+.dontclick {
+    color: rgba(0, 0, 0, 0.418);
+}
+
+nav a {
+    text-decoration: none;
+    margin: 50px;
+}
+
+.toclick:hover {
+    color: var(--botoeshover);
+    border-bottom: 3px solid var(--botoeshover);
+    
+
+}
+
+.click {
+    border-bottom: var(--botoes) 3px solid;
+    color: var(--botoes);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 1200px;
+}

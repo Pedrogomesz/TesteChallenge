@@ -1,0 +1,20 @@
+/* Fontes  */
+@font-face {
+    font-family: lemon;
+    src: url(LEMONMILK-Regular.otf);
+}
+@font-face {
+    font-family: boldlemon;
+    src: url(LEMONMILK-Bold.otf);
+}
+
+/* Colors  */
+:root {
+    --gradient1: #0077c7;
+    --gradient2: #009aa6;
+    --botoes: #418bca; 
+    --botoeshover: #1351b4;
+    --textbold: #276380;
+    --fundoaviso: #d9edf6;
+    --backabanner: #438eb8;
+}
