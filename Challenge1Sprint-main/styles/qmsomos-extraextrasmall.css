@@ -1,0 +1,65 @@
+@media (max-width: 480px) {
+
+    .titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    header {
+        padding: 15px;
+        background-size: 40px;
+        background-position: 5px center;
+    }
+
+    #menu-toggle {
+        font-size: 24px;
+    }
+
+    .paragsomos {
+        margin: 10px 15px 20px 15px;
+        font-size: 15px;
+    }
+
+    .foto {
+        height: 220px;
+    }
+
+    .fundoazul {
+        height: 450px;
+        width: 320px;
+        top: -600px;
+        left: 5px;
+        border-radius: 40px;
+    }
+
+    .conteudo,
+    .conteudolucas,
+    .conteudopedro {
+        top: 100px;
+        left: 5px;
+        font-size: 14px;
+    }
+
+    .imgcontato {
+        height: 180px;
+    }
+
+    .card {
+        width: 250px;
+        height: 350px;
+        margin: 10px;
+    }
+
+    .contatoinfo {
+        font-size: 16px;
+    }
+
+    .contatoinfo a i {
+        font-size: 24px;
+    }
+
+    main {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}

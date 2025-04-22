@@ -1,0 +1,136 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    font-family: lemon;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: -2px 9px 24px -11px rgba(0, 0, 0, 0.112);
+    /* position: fixed; */
+    width: 100%;
+    background-image: url(/images/pngtamnhocerto/logohc.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+}
+
+.dontclick {
+    color: rgba(0, 0, 0, 0.418);
+}
+
+nav a {
+    text-decoration: none;
+    margin: 50px;
+}
+
+.toclick:hover {
+    color: var(--botoeshover);
+    border-bottom: 3px solid var(--botoeshover);
+    
+
+}
+
+.click {
+    border-bottom: var(--botoes) 3px solid;
+    color: var(--botoes);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    gap: 10px;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.291);
+  }
+
+  .search-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  .search-container button {
+    background: var(--botoes);
+    border: none;
+    color: white;
+    padding: 0 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+
+  .search-container button:hover {
+    background: var(--botoeshover);
+  }
+
+  .search-container button:active {
+    background: #004f8c;
+}
+
+
+.results {
+    width: 800px;
+    margin: auto;
+    display: grid;
+}
+
+.results a {
+    padding: 20px;
+    border: 1px solid var(--botoeshover);
+    margin: 10px 0;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.051);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.743);
+    font-weight: 600px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.results a:hover {
+    background: var(--fundoaviso);
+    color: var(--botoeshover);
+    
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aviso{
+    width: 800px;
+    margin: 35px auto;
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 93, 0.048);
+    background: var(--fundoaviso);
+    border-radius: 10px;
+    
+}
+
+.aviso p,span{
+    font-family: arial;
+    color: var(--botoeshover);
+}
+
+.aviso span{
+    font-family: arial;
+    color: var(--botoeshover);
+    font-weight: bold;
+}
+
+footer {
+    font-family: lemon;
+}

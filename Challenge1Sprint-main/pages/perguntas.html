@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/perguntas.css">
+    <title>HC - Challenge</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="dontclick toclick">INICIO</a>
+            <a href="perguntas.html" class="click toclick">PERGUNTAS FREQUENTES</a>
+            <a href="qmsomos.html" class="dontclick toclick">QUEM SOMOS</a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Digite ou fale para buscar...">
+            <button id="voiceBtn" title="Clique para falar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white">
+                    <path
+                        d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 8v-3.1q-2.85-.35-4.725-2.4T4.2 12h2.05q.375 2.075 1.975 3.538Q9.825 17 12 17t3.775-1.462Q17.375 14.075 17.75 12h2.05q-.475 2.85-2.35 4.9T13 18.9V22Z" />
+                </svg>
+            </button>
+        </div>
+        
+        <div class="aviso">
+            <p><span>Dica! </span>Para uma melhor pesquisa, use palavras-chave ou tópicos de ajuda como: senha, login, teleconsulta, entre outros. Isso facilita o sistema a entender o que você precisa e traz resultados mais precisos e úteis. Quanto mais direto for o termo usado, mais fácil será encontrar a resposta certa para sua dúvida.</p>
+        </div>
+
+        <div class="results" id="results">
+            <a href="pages/perguntas/cadastro.html" class="item">Como cadastrar no aplicativo (PortalPaciente)</a>
+            <a href="" class="item">Onde eu acesso meus resultados?</a>
+            <a href="" class="item">Esqueceu a senha?</a>
+            <a href="" class="item">Onde pego minhas receitas?</a>
+            <a href="" class="item">Como acessar minha teleconsulta?</a>
+            <a href="" class="item">Como fazer a solicitação de exames?</a>
+          </div>
+        
+
+    </main>
+    <footer>
+        <div>
+            <p><a href="#">INICIO</a> | <a href="#">PERGUNTAS FREQUENTES</a> | <a href="#">QUEM SOMOS</a></p>
+            <img src="/images/fiaplogo.png" alt="logo da fiap">
+            <br>
+            <div class="redes">
+                <a href="#">Linkedin pedro gomes</a>
+                <a href="#">Linkedin lucas lopes</a>
+                <a href="#">Linkedin gustavo freire</a>
+            </div>
+        </div>
+        <div class="sobreprojeto">
+            <p>Sobre o Projeto</p>
+            <p><span>Desafio:</span>Ferramentas/Maneiras para auxiliar <br> aqueles com dificuldades em utilizar o celular <br> ou aparelho eletronico na hora da Saúde digital/Telemedicina</p>
+        </div>
+        <div class="feedback">
+            <div>
+                <p>Avalie nosso Suporte</p>
+                <form action="#">
+                    <label for="">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Escreva seu Nome">
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <input type="text" placeholder="E-mail">
+
+                    <br>
+                    <label for="">Avaliação</label>
+                    <input type="range">
+
+                    <br>
+                    <label for="email">Comentario:</label>
+                    <textarea name="comentario" id="coment"></textarea>
+                    <!-- resize: none " Utilizar para na deixar redefinir o tamnho do bloco de text"-->
+
+
+                    <input type="submit" value="Enviar Avaliação">
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/pesquisafacil.js"></script>
+</body>
+</html>
