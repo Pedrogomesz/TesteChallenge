@@ -1,0 +1,283 @@
+@media (min-width: 1300px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: lemon;
+        /* border: 1px solid red; */
+    }
+    
+    
+    
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        box-shadow: -2px 9px 24px -11px rgba(0, 0, 0, 0.112);
+        /* position: fixed; */
+        width: 100%;
+        background-image: url(/images/pngtamnhocerto/logohc.png);
+        background-size: 90px;
+        background-repeat: no-repeat;
+    }
+    
+    .dontclick {
+        color: rgba(0, 0, 0, 0.418);
+    }
+
+    .botaomenu {
+        visibility: hidden;
+    }
+    
+    nav a {
+        text-decoration: none;
+        margin: 50px;
+    }
+    
+    .toclick:hover {
+        color: var(--botoeshover);
+        border-bottom: 3px solid var(--botoeshover);
+        
+    
+    }
+    
+    .click {
+        border-bottom: var(--botoes) 3px solid;
+        color: var(--botoes);
+    }
+    
+    main {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 1200px;
+    }
+    
+    .quemsomos {
+        position: relative;
+        top: 100px;
+        border: 3px solid black;
+        padding: 40px;
+        border-radius: 50px;
+        height: 750px;
+        width: 600px;
+    }
+    
+    .quemsomos h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--botoes);
+    }
+    
+    .quemsomos p {
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    
+    .foto {
+        /* border: 1px red solid; */
+        margin: 0px;
+        height: 300px;
+    }
+    
+    .suafoto {
+        /* border: red solid 1px; */
+        width: 500px;
+        position: relative;
+        left: 20%;
+        top: 20px;
+        filter: drop-shadow(10px -4px 15px #00000031);
+        z-index: 2;
+    }
+    
+    .conteudo {
+        position: relative;
+        top: 200px;
+        right: 100px;
+        z-index: 2;
+    }
+    
+    .suafotol {
+        /* border: red solid 1px; */
+        width: 500px;
+        position: relative;
+        right: 0%;
+        top: -40px;
+        z-index: 2;
+    }
+    
+    .conteudolucas {
+        position: relative;
+        top: -230px;
+        left: 55%;
+        width: 300px;
+        z-index: 2;
+        color: white;
+    }
+    
+    .lucas {
+        filter: drop-shadow(10px -4px 15px #00000025);
+    }
+    
+    .suafotop {
+        width: 500px;
+        position: absolute;
+        position: relative;
+        left: 23%;
+        top: -290px;
+        rotate: 30%;
+        filter: drop-shadow(10px -4px 15px #00000041);
+        z-index: 2;
+    }
+    
+    .conteudopedro {
+        position: relative;
+        top: -60px;
+        right: 70px;
+    }
+    
+    .emojis {
+        height: 900px;
+    }
+    
+    .spannome {
+        color: var(--botoeshover);
+    }
+    
+    .nome {
+        font-size: 30px;
+    }
+    
+    .area{
+        font-size: 15px;
+    }
+    
+    .idade {
+        font-size: 20px;
+    }
+    
+    .fundoazul {
+        background: linear-gradient(309deg,rgba(3, 121, 199, 0.774) 34%, rgba(255, 255, 255, 0) 71%);
+        height: 800px;
+        width: 700px;
+        border-radius: 20%;
+        position: relative;
+        top: -1070px;
+    }
+    
+    .contato {
+        margin-top: -100px;
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(90deg, #007cc3 0%, #0097a8 100%);
+        padding: 180px 100px 100px 100px;
+         box-shadow: -1px 14px 73px -18px rgba(0, 0, 0, 0.336);
+        margin-bottom: 30px;
+    }
+    
+    .contatoh2 {
+        color: white;
+        bottom: -20px;
+        position: relative;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .imgcontato {
+        height: 300px;
+        position: relative;
+        bottom: 50px;
+    }
+    .contatoinfo {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .contatoinfo a {
+        font-size: 40px;
+        text-decoration: none;
+        color: var(--botoeshover);
+        margin: 30px 0px;
+    }
+    .card {
+        text-align: center;
+        border-radius: 20px;
+        height: 460px;
+        width: 350px;
+        background: white;
+        box-shadow: -1px 14px 73px -18px rgba(0, 0, 0, 0.308);
+    }
+    
+    footer {
+        display: flex;
+        background: rgb(25, 25, 25);
+        color: white;
+        padding: 20px;
+        height: 400px;
+        font-size: 15px;
+        justify-content: space-between;
+        box-shadow: 0px 7px 32px 8px rgba(0, 0, 0, 0.644);
+    }
+    
+    footer a {
+        color: white;
+        height: 300px;
+    }
+    
+    footer img{
+        height: 80px;
+    }
+    
+    .contatofooter {
+        margin: 20px;
+    }
+    
+    .rede a{
+        margin: 20px
+        
+    }
+    
+    .contatofooter img {
+        margin: 20px;
+    }
+    
+    
+    
+    .sobreprojeto {
+        margin: 20px;
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 200px;
+        
+    }
+    .sobreprojeto p {
+        font-size: 40px;
+        
+    }
+    
+    .titulo {
+        text-align: center;
+        color: var(--botoes);
+    }
+    
+    .sobreprojeto .paragfoot {
+        font-size: 15px;
+    }
+    
+    .paragfoot span {
+        color: var(--botoes);
+    }
+    
+    
+    .feedback {
+        margin: 20px;
+        /* border: 1px solid red; */
+    }
+    
+    input .tamanho {
+        resize: none;
+    }
+}

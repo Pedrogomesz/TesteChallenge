@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Marcar Consulta</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 30px;
+      background: #f9f9f9;
+    }
+
+    label,
+    input,
+    button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Agendar Consulta</h2>
+  <label for="dataConsulta">Escolha a data e hora da sua consulta:</label>
+  <input type="datetime-local" id="dataConsulta">
+  <button onclick="baixarICS()">Adicionar à Agenda</button>
+
+  <script>
+    function gerarICS(dataConsulta, titulo = "Consulta Médica") {
+      const data = new Date(dataConsulta);
+      const inicio = data.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+      const fim = new Date(data.getTime() + 30 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+
+     
+return `BEGIN: VCALENDAR
+
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${titulo}
+DTSTART:${inicio}
+DTEND:${fim}
+DESCRIPTION:Lembrete de consulta
+END:VEVENT
+END:VCALENDAR`;
+    }
+
+
+function baixarICS() {
+  const input = document.getElementById("dataConsulta").value;
+  if (!input) {
+    alert("Escolha uma data e hora.");
+    return;
+  }
+
+  const conteudo = gerarICS(input);
+  const blob = new Blob([conteudo], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "consulta.ics";
+  link.click();
+}
+
+
+
+  </script>
+</body>
+
+</html>
